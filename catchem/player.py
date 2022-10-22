@@ -1,7 +1,7 @@
 import random
 
 class Player:
-    def __init__(self,left,right0
+    def __init__(self,left,right,position)
         self.left = left
         self.right = right
         self.position = random.randint(left,right)
@@ -15,6 +15,11 @@ class Player:
     def get_position():
         return position
 
+    def display(self,move):
+        y = 7
+        x = self.position%8
+        sense.set_pixel(x-move,y,(0,0,0))
+        sense.set_pixel(x,y,(130,50,50))
 
 
          
